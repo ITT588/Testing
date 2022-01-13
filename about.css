@@ -7,6 +7,13 @@ body {
 *, :before, :after {
     box-sizing: border-box;
 }
+
+#About-us{
+  background-color: #EEEEEE;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
 .person {
   width: 600px;
   padding: 70px 0 0 230px;
