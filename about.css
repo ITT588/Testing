@@ -1,4 +1,5 @@
 body {
+  align-items: center
   background: #FFF;
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
@@ -8,13 +9,6 @@ body {
     box-sizing: border-box;
 }
 
-#About-us,
-#About-us h2,
-#About-us h2{
-  background-color: #EEEEEE;
-  padding-bottom: 50px;
-  align-items: center;
-}
 
 .person {
   width: 600px;
