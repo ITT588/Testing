@@ -62,9 +62,9 @@ body{
 
 .mybmi .container{
   background-color: #ffffff;
-  padding: 30px 30px;   
+  padding: 30px 30px;  
   max-width: 500px;
-  min-width: 400px;
+  min-width: 320px;
   border-radius: 5px;
   font-family: 'Poppins',sans-serif;
   box-shadow: 25px 25px 30px rgba(0,0,0,0.15);
@@ -383,9 +383,8 @@ footer li{
 
 
 /* SCREEN WIDTH */
-
 @media (max-width: 1115px){
-  #bmi-category .card-section{
+  #mybmi .container,#bmi-category .card-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
@@ -393,7 +392,7 @@ footer li{
 }
 
 @media (max-width: 700px){
-  #bmi-category .card-section{
+  #mybmi .container, #bmi-category .card-section{
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
