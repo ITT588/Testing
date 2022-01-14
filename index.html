@@ -145,6 +145,75 @@ calculate the BMI value.
         </div>
       </div>
     </section>
+  
+      <section class="mybmi">
+      <div class="container">
+        <h1>BMI Calculator</h1>
+        <div class="display">
+                  <p id="result">BMI</p>
+                  <p id="category">BMI Category</p>
+                          <p id="condition">Health Risk</p>
+        </div>
+          <div class="row">
+              <input id=sliderb type=range  min="100" max="250" value="100" oninput=weightb.value=value;calculate()>&nbsp; &nbsp; 
+              <input id=weightb type=number  min="100" max="250" value="100" oninput=sliderb.value=value;calculate()>
+              <span id="height-val">&nbsp;cm</span>
+          </div>
+          <div class="row">
+              <input id=slider type=range  min="20" max="200" value="20" oninput=weight.value=value;calculate()>&nbsp; &nbsp; 
+              <input id=weight type=number  min="20" max="200" value="20" oninput=slider.value=value;calculate()>
+              <span id="weight-val">&nbsp;kg</span>
+          </div>
+      </div>
+      </section>
+  
+      <!--Script-->
+      <script type="text/javascript">
+  function calculate(){
+      var bmi;
+      var result = document.getElementById("result");
+  
+      var weight = parseInt(document.getElementById("weight").value);
+  
+      var height = parseInt(document.getElementById("weightb").value);
+  
+      bmi = (weight / Math.pow( (height/100), 2 )).toFixed(1);
+      result.textContent = bmi;
+  
+      if(bmi < 18.5){
+          category = "Underweight 😒";
+          condition ="Malnutrition risk";
+          result.style.color = "#ffc44d";
+      }
+      else if( bmi >= 18.5 && bmi <= 24.9 ){
+          category = "Normal Weight 😍";
+          condition ="No Risk";
+          result.style.color = "#0be881";
+      }
+      else if( bmi >= 25 && bmi <= 29.9 ){
+          category = "Overweight 😮";
+          condition ="Enchanced Risk";
+          result.style.color = "#ff884d";
+      }
+      else if( bmi >= 30 && bmi <= 34.9 ){
+          category = "Moderately Obese 😮";
+          condition ="Medium Risk";
+          result.style.color = "#ff884d";
+      }
+      else if( bmi >= 35 && bmi <= 39.9 ){
+          category = "Severely Obese";
+          condition ="High Risk";
+          result.style.color = "#ff884d";
+      }
+      else{
+          category = "Very Severely Obese";
+          condition ="Very High Risk";
+          result.style.color = "#ff5e57";
+      }
+      document.getElementById("category").textContent = category;
+      document.getElementById("condition").textContent = condition;
+  }
+      </script>
     
     <section id= "About-us">
        <h2>About Us</h2>
@@ -203,12 +272,6 @@ calculate the BMI value.
       
     </section>
     
-    <br>
-    <br>
-    <br>
-       <center><embed type="text/html" src="bmi.html"  width="1200" height="800"></center>
-    
-  
     <footer>
       <p>2019 BMI Online. Kesehatan Nomor Satu.</p>
       <nav>
