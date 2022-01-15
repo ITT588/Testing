@@ -55,7 +55,7 @@ body{
 
 /*MYBMI*/
 .mybmi{
-  background: #FFCC44;
+  background: #EEEEEE;
   margin: auto;
   padding: 50px;
 }
@@ -185,7 +185,7 @@ footer
 }
 
 #bmi-definition{
-  background-color: #FFCC44;
+  background-color: #FFCC44 ;
 }
 
 #bmi-definition h2, 
@@ -222,7 +222,7 @@ footer
 }
 
 #bmi-category{
-  background-color: #EEEEEE;
+  background-color: #FFCC44;
   padding-bottom: 50px;
   align-items: center;
 }
