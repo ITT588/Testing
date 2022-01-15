@@ -9,6 +9,10 @@ body {
     box-sizing: border-box;
 }
 
+#About-us,
+#About-us{
+  background-color: #fff6f2;
+}
 
 .person {
   width: 600px;
