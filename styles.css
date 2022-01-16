@@ -318,7 +318,8 @@ footer
 
 #bmi-category .card{
   background-color: white;
-  box-shadow: 6px 4px 23px -6px rgba(0,0,0,0.75);;
+  box-shadow: 6px 4px 23px -6px rgba(0,0,0,0.75);
+  border-radius: 10%;
 }
 
 #bmi-category .card img{
