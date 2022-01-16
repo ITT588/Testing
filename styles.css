@@ -132,6 +132,7 @@ box-shadow: 0 0 20px rgba(0,139,253,0.25);
 margin-bottom: 60px;
 }
 
+
 /*Team*/
 .team {
   align-items: center;
@@ -142,12 +143,18 @@ margin-bottom: 60px;
   line-height: 1.5;
   font-size: 18px;
 }
+.team .container {
+  background-color: #ffffff;
+  padding: 30px 30px;  
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+}
+
 .team .person {
   padding: 70px 0 0 230px;
   min-height: 200px;
   margin: auto;
   position: relative;
-  align-items: center;
 }
 .team .person-badge {
   width: 200px;
@@ -158,7 +165,6 @@ margin-bottom: 60px;
   position: absolute;
   top: 0;
   left: 0;
-  align-items: center;
 }
 .team .person-badge:before,
 .team .person-badge:after{
@@ -172,12 +178,10 @@ margin-bottom: 60px;
   background: #DDD;
   background: linear-gradient(to bottom, #EEE 0%,#CCC 100%);
   transition:500ms;
-  align-items: center;
 }
 .team .person-badge:after {
   background: linear-gradient(to top, #F88 0%,#EEE 100%);
   opacity: 0;
-  align-items: center;
 }
 .team .person:nth-child(2) .person-badge:after {
   background: linear-gradient(to top, #5AB 0%,#EEE 100%);  
@@ -198,12 +202,10 @@ margin-bottom: 60px;
   bottom: 0;
   left: 0;
   transition: 500ms;
-  align-items: center;
 }
 .team .person-badge img.peculiar {
   opacity: 0;
-  transform: translateY(80px);
-    align-items: center;
+  transform: translateY(80px)
 }
 
 .team .person-badge:hover img.normal {opacity: 0;transform: translateY(80px)}
@@ -470,7 +472,7 @@ footer li{
 
 /* SCREEN WIDTH */
 @media (max-width: 1115px){
-  #team .person,#mybmi .container,#bmi-category .card-section{
+  #team .person .container,#mybmi .container,#bmi-category .card-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
@@ -478,7 +480,7 @@ footer li{
 }
 
 @media (max-width: 700px){
-  #team .person,#mybmi .container, #bmi-category .card-section{
+  #team .person .container,#mybmi .container, #bmi-category .card-section{
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
