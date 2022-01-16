@@ -134,6 +134,7 @@ margin-bottom: 60px;
 
 /*Team*/
 .team {
+  align-items: center;
   margin: auto;
   padding: 50px;
   background: #FFFFF;
