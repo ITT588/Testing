@@ -148,6 +148,9 @@ margin-bottom: 60px;
   padding: 30px 30px;  
   border-radius: 5px;
   font-family: 'Poppins',sans-serif;
+  margin: auto;
+  width: 50%;
+  align-items: center;
 }
 
 .team .person {
