@@ -158,6 +158,7 @@ margin-bottom: 60px;
   position: absolute;
   top: 0;
   left: 0;
+  align-items: center;
 }
 .team .person-badge:before,
 .team .person-badge:after{
@@ -171,10 +172,12 @@ margin-bottom: 60px;
   background: #DDD;
   background: linear-gradient(to bottom, #EEE 0%,#CCC 100%);
   transition:500ms;
+  align-items: center;
 }
 .team .person-badge:after {
   background: linear-gradient(to top, #F88 0%,#EEE 100%);
   opacity: 0;
+  align-items: center;
 }
 .team .person:nth-child(2) .person-badge:after {
   background: linear-gradient(to top, #5AB 0%,#EEE 100%);  
@@ -195,10 +198,12 @@ margin-bottom: 60px;
   bottom: 0;
   left: 0;
   transition: 500ms;
+  align-items: center;
 }
 .team .person-badge img.peculiar {
   opacity: 0;
-  transform: translateY(80px)
+  transform: translateY(80px);
+    align-items: center;
 }
 
 .team .person-badge:hover img.normal {opacity: 0;transform: translateY(80px)}
