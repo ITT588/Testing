@@ -147,6 +147,7 @@ margin-bottom: 60px;
   min-height: 200px;
   margin: auto;
   position: relative;
+  align-items: center;
 }
 .team .person-badge {
   width: 200px;
