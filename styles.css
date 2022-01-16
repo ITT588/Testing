@@ -135,6 +135,7 @@ margin-bottom: 60px;
 /*Team*/
 .team {
   align-items: center;
+  justify-content: center;
   margin: auto;
   padding: 50px;
   background: #FFFFF;
@@ -148,6 +149,7 @@ margin-bottom: 60px;
   margin: auto;
   position: relative;
   align-items: center;
+  justify-content: center;
 }
 .team .person-badge {
   width: 200px;
@@ -159,6 +161,7 @@ margin-bottom: 60px;
   top: 0;
   left: 0;
   align-items: center;
+  justify-content: center;
 }
 .team .person-badge:before,
 .team .person-badge:after{
@@ -173,11 +176,13 @@ margin-bottom: 60px;
   background: linear-gradient(to bottom, #EEE 0%,#CCC 100%);
   transition:500ms;
   align-items: center;
+  justify-content: center;
 }
 .team .person-badge:after {
   background: linear-gradient(to top, #F88 0%,#EEE 100%);
   opacity: 0;
   align-items: center;
+  justify-content: center;
 }
 .team .person:nth-child(2) .person-badge:after {
   background: linear-gradient(to top, #5AB 0%,#EEE 100%);  
@@ -199,11 +204,13 @@ margin-bottom: 60px;
   left: 0;
   transition: 500ms;
   align-items: center;
+  justify-content: center;
 }
 .team .person-badge img.peculiar {
   opacity: 0;
   transform: translateY(80px);
     align-items: center;
+  justify-content: center;
 }
 
 .team .person-badge:hover img.normal {opacity: 0;transform: translateY(80px)}
