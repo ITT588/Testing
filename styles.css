@@ -472,7 +472,7 @@ footer li{
 
 /* SCREEN WIDTH */
 @media (max-width: 1115px){
-  #team .person,#mybmi .container,#bmi-category .card-section{
+  .team .person,#mybmi .container,#bmi-category .card-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
@@ -480,7 +480,7 @@ footer li{
 }
 
 @media (max-width: 700px){
-  #team .person,#mybmi .container, #bmi-category .card-section{
+  .team .person,#mybmi .container, #bmi-category .card-section{
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
